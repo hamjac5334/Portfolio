@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="work.workController">
+    <children>
+        <Button id="calculate" fx:id="calculate" layoutX="27.0" layoutY="331.0" mnemonicParsing="false" onAction="#Calculations" text="Calculate" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bdc7d0" height="218.0" layoutX="185.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" width="355.0" />
+        <Label layoutX="149.0" layoutY="312.0" prefHeight="17.0" prefWidth="127.0" text="Enter an integer (1-10):" />
+        <Button id="reset" fx:id="reset" layoutX="534.0" layoutY="308.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+        <TextField id="enterInt" fx:id="enterInt" layoutX="284.0" layoutY="308.0" prefHeight="26.0" prefWidth="168.0" />
+        <HBox alignment="BOTTOM_CENTER" layoutX="185.0" layoutY="46.0" prefHeight="218.0" prefWidth="355.0" spacing="5.0">
+            <children>
+                <Rectangle id="button1" fx:id="button1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" stroke="BLACK" strokeType="INSIDE" width="67.0" />
+                <Rectangle fx:id="button2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" stroke="BLACK" strokeType="INSIDE" width="67.0" />
+                <Rectangle fx:id="button3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" stroke="BLACK" strokeType="INSIDE" width="67.0" />
+                <Rectangle fx:id="button4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" stroke="BLACK" strokeType="INSIDE" width="67.0" />
+                <Rectangle fx:id="button5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" stroke="BLACK" strokeType="INSIDE" width="67.0" />
+            </children>
+        </HBox>
+        <Label layoutX="112.0" layoutY="149.0" rotate="-90.0" text="Frequency" />
+        <VBox alignment="CENTER" layoutX="161.0" layoutY="46.0" prefHeight="218.0" prefWidth="24.0" spacing="3.5">
+            <children>
+                <Label text="10" />
+                <Label text="9" />
+                <Label text="8" />
+                <Label text="7" />
+                <Label text="6" />
+                <Label text="5" />
+                <Label text="4" />
+                <Label text="3" />
+                <Label text="2" />
+                <Label text="1" />
+                <Label text="0" />
+            </children>
+        </VBox>
+        <HBox alignment="CENTER" layoutX="185.0" layoutY="264.0" prefHeight="26.0" prefWidth="355.0" spacing="45.0">
+            <children>
+                <Label text="(1,2)" />
+                <Label text="(3,4)" />
+                <Label text="(5,6)" />
+                <Label text="(7,8)" />
+                <Label layoutX="68.0" layoutY="10.0" text="(9,10)" />
+            </children>
+        </HBox>
+        <VBox alignment="CENTER_LEFT" layoutX="19.0" layoutY="231.0" prefHeight="92.0" prefWidth="135.0" spacing="5.0">
+            <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="127.0">
+               <children>
+                      <Label prefHeight="17.0" prefWidth="42.0" text="Mean:" />
+                  <TextField id="mean" fx:id="mean" editable="false" prefHeight="26.0" prefWidth="70.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="119.0">
+               <children>
+                      <Label prefHeight="17.0" prefWidth="55.0" text="# of data:" />
+                  <TextField id="median" fx:id="median" editable="false" prefHeight="26.0" prefWidth="50.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="127.0">
+               <children>
+                      <Label prefHeight="17.0" prefWidth="45.0" text="Mode: " />
+                  <TextField id="mode" fx:id="mode" editable="false" prefHeight="26.0" prefWidth="66.0" />
+               </children>
+            </HBox>
+            </children>
+        </VBox>
+        <Label layoutX="315.0" layoutY="282.0" prefHeight="17.0" prefWidth="48.0" text="Values" />
+        <Label layoutX="158.0" layoutY="365.0" prefHeight="17.0" prefWidth="83.0" text="Current Data:" />
+        <TextField id="data" fx:id="data" editable="false" layoutX="235.0" layoutY="361.0" prefHeight="26.0" prefWidth="323.0" />
+      <Button id="submit" fx:id="submit" layoutX="465.0" layoutY="308.0" mnemonicParsing="false" onAction="#submits" text="Submit" />
+      <Label layoutX="245.0" layoutY="8.0" text="Data Tracker">
+         <font>
+            <Font name="AkayaKanadaka-Regular" size="26.0" />
+         </font>
+      </Label>
+    </children>
+</Pane>
