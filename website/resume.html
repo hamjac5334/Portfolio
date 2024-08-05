@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Hamilton's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: linear-gradient(to right, #373E4B, #8E8894);
+            font-family: "Times New Roman", Times, serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            transition: background-color 1s ease;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 40px;
+            height: 80px;
+            color: #BDB835;
+            padding: 0 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #373E4B;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 10px 10px;
+            border-bottom: 3px solid #BDB835;
+        }
+
+        .header h4 {
+            font-size: 40px;
+            text-stroke: .45px black;
+            -webkit-text-stroke: .45px black;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            font-weight: bold;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 42px;
+            color: #BDB835;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            text-stroke: .4px black;
+            -webkit-text-stroke: .4px black;
+        }
+        nav ul li a:hover {
+            color: white;
+            background-color: rgba(189, 184, 53, 0.2);
+        }
+
+        .resume-section {
+            text-align: center;
+            margin: 100px 0 50px 0; 
+        }
+
+        .resume-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .download-link {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: #BDB835;
+            background-color: #373E4B;
+            border: 2px solid #BDB835;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .download-link:hover {
+            color: white;
+            background-color: rgba(189, 184, 53, 0.2);
+        }
+
+        footer {
+            background-color: #373E4B;
+            color: #BDB835;
+            text-align: center;
+            padding: 20px;
+            border-top: 3px solid #BDB835;
+            width: 100%;
+            margin-top: auto; /* Ensures footer stays at the bottom of the content */
+        }
+
+        footer a {
+            color: #BDB835;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h4>Jack Hamilton</h4>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="resume-section">
+            <a href="Jack Hamilton.png" class="download-link" download>Click Here to Download My Resume</a>
+            <img src="Jack Hamilton.png" class="img-fluid" alt="Jack Hamilton's Resume">
+        </div>
+    </div>
+
+    <footer>
+        <h3>Contact Me</h3>
+        <p>Phone: <a href="tel:+18438477056">(843) 847-7056</a></p>
+        <p>Email: <a href="mailto:jack.hamilton@comcast.net">jack.hamilton@comcast.net</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jack-hamilton-457bb02a7/">https://www.linkedin.com/in/jack-hamilton-457bb02a7/</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

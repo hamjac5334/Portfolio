@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Hamilton's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        body {
+            background-image: linear-gradient(to right, #373E4B, #8E8894);
+            font-family: "Times New Roman", Times, serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 40px;
+            height: 80px;
+            color: #BDB835;
+            padding: 0 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #373E4B;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 10px 10px;
+            border-bottom: 3px solid #BDB835;
+        }
+
+        .header h4 {
+            font-size: 40px;
+            text-stroke: .45px black;
+            -webkit-text-stroke: .45px black;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            font-weight: bold;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 42px;
+            color: #BDB835;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            text-stroke: .4px black;
+            -webkit-text-stroke: .4px black;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            background-color: rgba(189, 184, 53, 0.2);
+        }
+
+        .projects-section {
+            margin: 20px;
+            padding: 20px;
+            line-height: 40px;
+            padding-top: 80px; 
+            padding-bottom: 100px; 
+        }
+
+        .container-custom {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .projects-section h2, .projects-section h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .projects-section a {
+            color: lightblue;
+        }
+
+        footer {
+            background-color: #373E4B;
+            color: #BDB835;
+            text-align: center;
+            padding: 20px;
+            border-top: 3px solid #BDB835;
+            width: 100%;
+            margin-top: auto; 
+        }
+
+        footer a {
+            color: #BDB835;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h4>Jack Hamilton</h4>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container-fluid projects-section">
+        <h2><u>Projects</u></h2>
+        <div class="text-center mb-4">
+            <h3>Computer Science Projects:</h3>
+            <a href="https://github.com/hamjac5334/Portfolio">https://github.com/hamjac5334/Portfolio</a>
+        </div>
+        
+        
+        <div class="container-custom">
+            <h3 class="text-center"><u>Python Projects</u></h3>
+            <div class="mb-4">
+                <h4>Command Line Hangman (Python)</h4>
+                
+                <a href="https://github.com/hamjac5334/Portfolio/blob/main/HangManPy/main.py">https://github.com/hamjac5334/Portfolio/HangManPy</a>
+                <p>Revising. This project gives the user 7 errors to guess the letters in the target word. If the user guesses a correct letter, it will show up in the correct position. Otherwise, if the guess is incorrect, one of the seven lives is subtracted. This was one of my first Python projects, where I learned how to compare strings, create gameplay logic, and store responses in an array.</p>
+            </div>
+        </div>
+
+        
+        <div class="container-custom">
+            <h3 class="text-center"><u>Java Projects</u></h3>
+            <div class="mb-4">
+                <h4>Command Line Wordle (Java)</h4>
+                <p>This project is a spin-off of the popular game Wordle, displayed in the command line. The user has 6 attempts to guess a 5-letter word. Correct letters in the correct position are displayed as capital letters, correct letters in the wrong position as lowercase letters, and "X" placeholders for incorrect guesses. This project helped me learn about string comparison and game logic in Java.</p>
+            </div>
+
+            <div class="mb-4">
+                <h4>Measures of Central Tendency with GUI (Java)</h4>
+                <p>This project takes integer input data from the user and calculates the measures of central tendency. The data is stored in an ArrayList and the mean, number of data points, standard deviation, and variance are calculated. I learned to work with ArrayLists, perform statistical calculations, and build a GUI using JavaFX and SceneBuilder.</p>
+            </div>
+
+            <div class="mb-4">
+                <h4>Graphical Data Display with GUI (Java)</h4>
+                <p>Building on my Measures of Central Tendency project, this project adds animation to a bar graph. The array list contains integers entered by the user, calculates measures of central tendency, and adjusts the bar graph for frequency upon submission. I learned animation techniques with JavaFX.</p>
+            </div>
+
+            <div class="mb-4">
+                <h4>Two Player Air-hockey (Java)</h4>
+                <p>In the process of uploading. This project is a two-player air hockey game where the winner is the first to reach 5 points. It helped me learn physics for ball movement and collision, as well as gameplay functions like scoring and determining the winner.</p>
+            </div>
+
+            <div class="mb-4">
+                <h4>Single Player Air-hockey vs AI Opponent (Java)</h4>
+                <p>This project is a single-player air hockey game with an AI opponent, played until the first player reaches 5 points. The ball's positioning and trajectory are stored in a hashmap. The AI's movements are based on a learning factor and the position data from the hashmap. I learned key commands with JavaFX, data storage in hashmaps, and basic AI development.</p>
+            </div>
+        </div>
+
+        
+        <div class="container-custom">
+            <h3 class="text-center"><u>SQL Projects</u></h3>
+
+        </div>
+
+        
+        <div class="container-custom">
+            <h3 class="text-center"><u>Data Analysis Projects</u></h3>
+            <div class="mb-4">
+                <a href="https://www.kaggle.com/jackhamilton45">
+                https://www.kaggle.com/jackhamilton45</a>
+                <h4>Music Analysis</h4>
+                <p>In my Computational Humanities class, I did a project where I analyzed the differences of the top ten popular songs from 1953 have to the top ten popular songs from 2023. I first created 7 different segments of code that individually: Tempo, Timbre,Major : Minor (ratio of Major to Minor chords), Lyric Sentiment, Memory, 3 Librosa Functions, and Total Score (Tells how complex songs are). I used Pandas, Matplotlib, Librosa, Numpy, and other python packages to complete this project.</p>
+            </div>
+        </div>
+
+        
+        <div class="container-custom">
+            <h3 class="text-center"><u>Statistical Analysis</u></h3>
+            <div class="mb-4">
+                <h4 style="text-align: left;">Socio-economic Impact on Classroom Performance</h4>
+                <p>I wanted to see how much somebody's socioeconomic status affects how well they do in primary and secondary school. I found raw data from an anonymous school district in North Carolina that provides demographic information about the students along with standardized testing scores. From a sample size of 10,000, I found the summary statistics and then conducted hypothesis testing to find the results. Read my analysis on the link provided above.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Contact Me</h3>
+        <p>Phone: <a href="tel:+18438477056">(843) 847-7056</a></p>
+        <p>Email: <a href="mailto:jack.hamilton@comcast.net">jack.hamilton@comcast.net</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jack-hamilton-457bb02a7/">https://www.linkedin.com/in/jack-hamilton-457bb02a7/</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

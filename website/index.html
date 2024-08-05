@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Hamilton's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+
+        body {
+            background-image: linear-gradient(to right, #373E4B, #8E8894);
+            font-family: "Times New Roman", Times, serif;
+            color: white;
+            margin-top: 100px;
+            transition: background-color 1s ease;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 40px;
+            height: 80px;
+            color: #BDB835;
+            padding: 0 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #373E4B;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 10px 10px;
+            border-bottom: 3px solid #BDB835;
+        }
+
+        .header h4 {
+            font-size: 40px;
+            text-stroke: .45px black;
+            -webkit-text-stroke: .45px black;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            font-weight: bold;
+        }
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 42px;
+            color: #BDB835;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            text-stroke: .4px black;
+            -webkit-text-stroke: .4px black;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            background-color: rgba(189, 184, 53, 0.2);
+        }
+
+        .image-section {
+            position: relative;
+            transition: transform 1s ease;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            margin: 0;
+            padding: 0;
+            transition: opacity 2s ease;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #FFFFFF;
+            font-size: 70px;
+            text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid rgba(255, 255, 255, 0.75);
+            transition: opacity 2s ease;
+        }
+
+        .links-section, .about-container, .skills-section, .courses-section, footer {
+            opacity: 0;
+            transition: opacity 2s ease, transform 1s ease;
+        }
+
+        .links-section.active, .about-container.active, .skills-section.active, .courses-section.active, footer.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .links-section {
+            transform: translateY(50px);
+            text-align: center;
+        }
+
+        .about-container, .skills-section, .courses-section {
+            transform: translateY(30px);
+        }
+
+        .about-container {
+            background-color: rgba(0, 0, 0, 0.5);
+            line-height: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .page-content {
+            margin: 20px;
+            line-height: 2;
+        }
+
+        .skills-section, .courses-section {
+            margin: 20px 0;
+        }
+
+        .skills-container, .courses-container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .skills-section h3, .courses-section h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .skills-section ul, .courses-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skills-section ul li, .courses-section ul li {
+            background-color: #4A4A4A;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+            color: #E0E0E0;
+        }
+
+        footer {
+            background-color: #373E4B;
+            color: #BDB835;
+            text-align: center;
+            padding: 20px;
+            border-top: 3px solid #BDB835;
+            width: 100%;
+        }
+
+        footer a {
+            color: #BDB835;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: rgba(255, 255, 255, 0.75); }
+        }
+
+        .typing {
+            animation: typing 2s steps(22, end), blink-caret 0.75s step-end infinite;
+            width: auto;
+            display: inline-block;
+        }
+        .blinking-cursor {
+            animation: blink-caret 0.75s step-end infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h4>Jack Hamilton</h4>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="image-section">
+            <img src="IMG_3766.JPG" alt="Profile Image">
+            <div class="overlay" id="animated-text"></div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="links-section">
+            <h2><u>Important Links</u></h2>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jack-hamilton-457bb02a7/" style="color: lightblue">https://www.linkedin.com/in/jack-hamilton</a></p>
+            <p>Github: <a href="https://github.com/hamjac5334/Portfolio" style="color: lightblue">https://github.com/hamjac5334/Portfolio</a></p>
+            <p>Kaggle: <a href="https://www.kaggle.com/jackhamilton45" style="color: lightblue">https://www.kaggle.com/jackhamilton45</a></p>
+            <p>Other Files/Projects: <a href="https://drive.google.com/drive/folders/1zNm5xlO4knISnFJxHTyDfnHeXUSvmzOI" style="color: lightblue">https://www.myworkishere.com</a></p>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="about-container">
+            <h2 class="text-center"><u>About Me</u></h2>
+            <img src="IMG_3783.heic" class="float-right ml-3 mb-3" style="width:200px;height:200px; border-radius: 50%;">
+            <p>
+                My name is Jack Hamilton, and I am from Mount Pleasant, South Carolina. I am currently in my junior year at Hendrix College where I major in Computer Science and minor in Data Analytics. I aspire to pursue my Master's degree and a career in Data Science and Machine Learning as well as continuing to learn a variety of skills along the way. My education at Hendrix College has provided me with strong analytical skills, logical thinking, and problem-solving skills. I have gained a lot of programming experience through the classes I have taken at school, online boot camps, and other online resources. These skills have been exemplified in the projects I have completed over the past two years, including java games, python models and analysis, along with statistical projects in Microsoft Excel. All of my projects (both school and extracurricular) are included on my GitHub, Kaggle, and Google Drive (links included at the top). More information regarding the descriptions of my projects are on the "Projects" tab of this website.
+            </p>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="page-content">
+            <h2 class="text-center"><u>Skills</u></h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card skills-container">
+                        <div class="card-body">
+                            <div class="skills-section">
+                                <h4>Programming Languages:</h4>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Java</li>
+                                    <li>HTML and CSS</li>
+                                    <li>SQL</li>
+                                    <li>R</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card skills-container">
+                        <div class="card-body">
+                            <div class="skills-section">
+                                <h4>Data Analytics Tools:</h4>
+                                <ul>
+                                    <li>Pandas</li>
+                                    <li>Matplotlib</li>
+                                    <li>Numpy</li>
+                                    <li>Scikit-learn</li>
+                                    <li>Statistics</li>
+                                    <li>Excel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-center"><u>Completed Courses</u></h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card courses-container">
+                        <div class="card-body">
+                            <!--<h3 class="card-title"><u>Completed Courses</u></h3>!-->
+                            <div class="courses-section">
+                                <h4>Classes Completed:</h4>
+                                <ul>
+                                    <li>Intro to Computer Science</li>
+                                    <li>Business Statistics</li>
+                                    <li>Data Structures</li>
+                                    <li>Computational Humanities</li>
+                                    <li>Computing Systems Organization</li>
+                                    <li>Discrete Mathematics</li>
+                                    <li>Algorithms (currently taking)</li>
+                                    <li>Scientific Computing (currently taking)</li>
+                                    <li>Mobile Application Development (currently taking)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card courses-container">
+                        <div class="card-body">
+                            <div class="courses-section">
+                                <h4>Online Courses:</h4>
+                                <ul>
+                                    <li>Kaggle Tutorials</li>
+                                    <li>Data Camp</li>
+                                    <li>Microsoft Data Science Course (pending)</li>
+                                    <li>Coursera Data Analytics (Audit) (pending)</li>
+                                    <li>Coursera Excel Bootcamp (Audit) (pending)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Contact Me</h3>
+        <p>Phone: <a href="tel:+18438477056">(843) 847-7056</a></p>
+        <p>Email: <a href="mailto:jack.hamilton@comcast.net">jack.hamilton@comcast.net</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jack-hamilton-457bb02a7/">https://www.linkedin.com/in/jack-hamilton-457bb02a7/</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var textElement = document.getElementById('animated-text');
+            var texts = ["Welcome To My Portfolio", "My Name Is Jack Hamilton"];
+            var currentIndex = 0;
+            var currentText = '';
+            var i = 0;
+            var cursor = document.createElement('span');
+            cursor.classList.add('blinking-cursor');
+            cursor.innerHTML = '|';
+            textElement.appendChild(cursor);
+
+            function typeWriter() {
+                if (i < texts[currentIndex].length) {
+                    currentText += texts[currentIndex].charAt(i);
+                    textElement.innerHTML = currentText;
+                    textElement.appendChild(cursor);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                } else {
+                    currentIndex++;
+                    if (currentIndex < texts.length) {
+                        i = 0;
+                        currentText = '';
+                        setTimeout(typeWriter, 500);
+                    } else {
+                        cursor.style.animation = 'none';
+                    }
+                }
+            }
+
+            typeWriter();
+
+            function onScroll() {
+                var sections = document.querySelectorAll('.links-section, .about-container, .skills-section, .courses-section, footer');
+                sections.forEach(function(section) {
+                    var rect = section.getBoundingClientRect();
+                    if (rect.top <= window.innerHeight - 100) {
+                        section.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', onScroll);
+            onScroll();
+
+            var hasScrolled = false;
+            window.addEventListener('scroll', function() {
+                if (!hasScrolled) {
+                    window.scrollTo({ top: document.querySelector('.links-section').offsetTop - document.querySelector('.header').offsetHeight, behavior: 'smooth' });
+                    hasScrolled = true;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
