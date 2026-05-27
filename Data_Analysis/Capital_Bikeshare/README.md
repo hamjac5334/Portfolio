@@ -1,6 +1,6 @@
 # Capital Bikeshare: Casual-to-Member Conversion Strategy
  
-> Identifying high yield stations for a behavioral targeting campaign that converts casual riders into annual members.
+ Identifying high yield stations for a behavioral targeting campaign that converts casual riders into annual members.
  
 **Live dashboard:** [Capital Bikeshare Conversion Target Explorer](https://public.tableau.com/app/profile/jack.hamilton4441/viz/Capital_Bikeshare_Conversion_Target_dashboard/Dashboard1)
  
@@ -8,9 +8,6 @@
 **Full analysis notebook:** [`analysis.ipynb`](analysis.ipynb)
 **Interactive station map:** [`deliverables/station_map.html`](deliverables/station_map.html)
  
----
- 
-## TL;DR
  
 Analysis of **6.2 million Capital Bikeshare rides** over 12 months (May 2025 – April 2026) identifies **55,000 casual rides per month** (32% of casual ridership) that exhibit behavioral patterns indistinguishable from member ridership. Five stations in the upper Northwest DC corridor, anchored by Union Station and Georgetown University. A validated pilot campaign at these stations scales to an estimated **1,060 new annual members and $127K in annual recurring revenue** ($48K–$318K sensitivity range depending on conversion rate).
  
@@ -20,7 +17,7 @@ Analysis of **6.2 million Capital Bikeshare rides** over 12 months (May 2025 –
  
 **Client:** Director of Growth, Lyft Urban Solutions (operator of Capital Bikeshare).
  
-- **Situation.** Capital Bikeshare operates over 6 million trips per year across DC. Annual members generate predictable recurring revenue (~$95–$120/year); casual riders pay per ride and represent roughly 30% of trips.
+- **Situation.** Capital Bikeshare operates over 6 million trips per year across DC. Annual members generate predictable recurring revenue ($95–$120/year); casual riders pay per ride and represent roughly 30% of trips.
 - **Complication.** Member growth is plateauing as paid acquisition costs rise. A meaningful share of casual rides exhibits repeat-commuter behavior — suggesting the conversion opportunity already exists inside the casual base but is invisible to current marketing.
 - **Question.** Which 3–5 stations represent the highest-ROI targets for a casual-to-member conversion campaign?
 - **Analytical pivot.** The public dataset contains no user IDs so analysis must operate at the ride level via behavioral signature rather than at the rider level via identity tracking.
@@ -37,7 +34,7 @@ A gradient boosting classifier trained to distinguish member rides from casual r
  
 ## Recommended targets
  
-Five stations rank highest by **target score** (model-flagged member-like volume × concentration of member-like behavior):
+Five stations rank highest by **target score** (model flagged member like volume × concentration of member-like behavior):
  
 | Rank | Station | Monthly member-like rides | Concentration | Total casual rides |
 |------|---------|---------------------------|---------------|--------------------|
@@ -58,10 +55,10 @@ These stations cluster geographically along the 14th Street / U Street / Logan C
  
 Four tactics, each tied to a feature the model identified as most predictive of member-like behavior:
  
-1. **On-bike screen messaging during weekday rush hours.** Contextual offer ("Save up to $270/year if you are already riding 3+ times a week?") on bike displays at the five target stations, 7–9am and 4–7pm weekdays. Estimated reach: 1,400 rush hour impressions per station per month at zero incremental cost.
+1. **On bike screen messaging during weekday rush hours.** Contextual offer ("Save up to $270/year if you are already riding 3+ times a week?") on bike displays at the five target stations, 7–9am and 4–7pm weekdays. Estimated reach: 1,400 rush hour impressions per station per month at zero incremental cost.
 2. **Permanent dock signage with QR value calculator.** Above dock signage at each target station linking to a savings calculator. 24/7 visibility, reuses the rush hour creative.
-3. **Trigger-based email and push notifications.** Send membership offers to accounts purchasing 3+ single-trip passes within 30 days, operationalizes the conversion insight via transaction data.
-4. **Adjacent-employer and university partnerships.** Pursue corporate-rate pilots with HR offices at Georgetown University and Union Station's federal employer cluster.
+3. **Trigger based email and push notifications.** Send membership offers to accounts purchasing 3+ single-trip passes within 30 days, operationalizes the conversion insight via transaction data.
+4. **Adjacent employer and university partnerships.** Pursue corporate-rate pilots with HR offices at Georgetown University and Union Station's federal employer cluster.
 ---
  
 ## Sizing the opportunity
@@ -69,7 +66,7 @@ Four tactics, each tied to a feature the model identified as most predictive of 
 | Scope | New annual members | Annual recurring revenue |
 |---|---|---|
 | Pilot (5 stations) | 43 | $5,200 |
-| Full systemwide | ~1,060 | ~$127,000 |
+| Full systemwide | ~1,060 | $127,000 |
  
 **Sensitivity to conversion rate:**
  
@@ -82,7 +79,7 @@ Four tactics, each tied to a feature the model identified as most predictive of 
 | 15% | 1,988 | $238,560 |
 | 20% | 2,651 | $318,120 |
  
-The pilot is the validation step that narrows the systemwide range. Sizing assumes ~30 rides per unique potential converter per year, a key assumption that field testing should validate.
+The pilot is the validation step that narrows the systemwide range. Sizing assumes 30 rides per unique potential converter per year, a key assumption that field testing should validate.
  
 ---
  
@@ -142,7 +139,7 @@ The raw data (12 monthly CSVs, 6.2M rows total) is not committed to this repo, b
 ## What I'd do with more time
  
 - Acquire anonymized user level data to enable rider-level (not ride-level) conversion modeling.
-- Add exogenous features: weather, event calendar, station amenities, adjacent transit ridership.
+- Add more in depth features: weather, event calendar, station amenities, adjacent transit ridership.
 - Hyperparameter tuning and out of time cross validation.
 - Operationalize the model as a real time targeting system feeding the on-bike screens and trigger based notifications.
 - A/B test the four interventions individually to attribute conversion lift to specific tactics.
