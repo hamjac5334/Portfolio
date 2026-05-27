@@ -26,8 +26,10 @@ Analysis of **6.2 million Capital Bikeshare rides** over 12 months (May 2025 –
  
 A gradient boosting classifier trained to distinguish member rides from casual rides identifies **55,226 casual rides per month** as behaviorally member-like (P(member) > 0.5). This is **five times the size** of a simple rule based commuter heuristic (rush hour + weekday + short + one way), which captures only 10,868 rides. The model-flagged population is the broader conversion target, riders who behave like members but haven't purchased the membership.
  
-<img width="546" height="337" alt="Screenshot 2026-05-27 at 12 01 21 AM" src="https://github.com/user-attachments/assets/1285a798-58b6-44d5-aff3-f9348027af24" />
-*Hour × day of week distribution of ride volume. Members ride in commute rhythm (weekday rush hours); casuals ride in leisure rhythm (weekend midday). The visible overlap at weekday rush hours is the conversion opportunity.*
+<img width="742" height="286" alt="Screenshot 2026-05-27 at 12 13 51 AM" src="https://github.com/user-attachments/assets/a4960332-9062-43e3-9070-e94f31fb7f01" />
+
+
+Hour × day of week distribution of ride volume. Members ride in commute rhythm (weekday rush hours); casuals ride in leisure rhythm (weekend midday). The visible overlap at weekday rush hours is the conversion opportunity.
  
 ---
  
@@ -44,9 +46,14 @@ Five stations rank highest by **target score** (model flagged member like volume
 | 5 | 14th & V St NW | 380 | 40% | 955 |
  
 These stations cluster geographically along the 14th Street / U Street / Logan Circle / Dupont corridor in upper Northwest DC, with two transit/university anchors (Union Station, Georgetown). The clustering enables a single corridor-level campaign rather than five independent station-by-station efforts.
+
+<img width="861" height="342" alt="Screenshot 2026-05-27 at 12 00 44 AM" src="https://github.com/user-attachments/assets/df7a014a-7c76-40a2-9542-e82e53cc9c18" />
+
  
-![Top conversion target stations](figures/top_targets_map.png)
-*Station level conversion potential. Marker color encodes member-like share; marker size encodes total casual ride volume.*
+<img width="1463" height="747" alt="Screenshot 2026-05-26 at 11 57 32 PM" src="https://github.com/user-attachments/assets/eddeff49-39d1-49b5-a7c1-943faa50e4e8" />
+
+
+Station level conversion potential. Marker color encodes member-like share; marker size encodes total casual ride volume
  
 ---
  
@@ -103,7 +110,7 @@ The analysis follows a five stage pipeline:
 3. **Feature engineering.** 17 engineered features across three families: temporal (hour, day-of-week, rush-hour, season), trip-level (duration, distance, speed, round-trip flag, bike type), and station aggregates (per-station ride totals, casual share, avg duration).
 4. **Modeling.** Chronological train/validation/test split (months 1–10 train, 11 validation, 12 test). HistGradientBoostingClassifier with class balancing. Target leakage controlled by computing station aggregates on training data only and merging onto val/test.
 5. **Translation.** Model scores aggregated to the station level. Stations ranked by member like volume × concentration. Sizing computed transparently with named, sensitivity tested assumptions.
-**Model performance.** ROC AUC = 0.73 on the held-out validation set. Moderate — by design. The AUC reflects real overlap between member and casual ride patterns, which is the central thesis of the analysis. Effect sizes (Cramér's V = 0.21 for rush-hour effect) confirm that the differences are practically meaningful, not artifacts of sample size.
+**Model performance.** ROC AUC = 0.73 on the held out validation set. The AUC reflects real overlap between member and casual ride patterns, which is the central thesis of the analysis. Effect sizes (Cramér's V = 0.21 for rush-hour effect) confirm that the differences are practically meaningful, not artifacts of sample size.
  
  
 ## Reproducing the analysis
