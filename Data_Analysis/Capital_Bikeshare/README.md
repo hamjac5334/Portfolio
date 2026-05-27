@@ -4,9 +4,8 @@
  
 **Live dashboard:** [Capital Bikeshare Conversion Target Explorer](https://public.tableau.com/app/profile/jack.hamilton4441/viz/Capital_Bikeshare_Conversion_Target_dashboard/Dashboard1)
  
-**Deck:** [`deliverables/deck.pdf`](deliverables/deck.pdf)
-**Full analysis notebook:** [`analysis.ipynb`](analysis.ipynb)
-**Interactive station map:** [`deliverables/station_map.html`](deliverables/station_map.html)
+**Deck:** [`Capital_bikeshare_presentation.pdf`]([deliverables/deck.pdf](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Capital_Bikeshare/capital_bikeshare.pdf))
+**Full analysis notebook:** [`analysis.ipynb`](new.ipynb)
  
  
 Analysis of **6.2 million Capital Bikeshare rides** over 12 months (May 2025 – April 2026) identifies **55,000 casual rides per month** (32% of casual ridership) that exhibit behavioral patterns indistinguishable from member ridership. Five stations in the upper Northwest DC corridor, anchored by Union Station and Georgetown University. A validated pilot campaign at these stations scales to an estimated **1,060 new annual members and $127K in annual recurring revenue** ($48K–$318K sensitivity range depending on conversion rate).
@@ -15,17 +14,18 @@ Analysis of **6.2 million Capital Bikeshare rides** over 12 months (May 2025 –
  
 ## The business question
  
-**Client:** Director of Growth, Lyft Urban Solutions (operator of Capital Bikeshare).
+**Client:** Capital Bikeshare Expansion Team
  
 - **Situation.** Capital Bikeshare operates over 6 million trips per year across DC. Annual members generate predictable recurring revenue ($95–$120/year); casual riders pay per ride and represent roughly 30% of trips.
 - **Complication.** Member growth is plateauing as paid acquisition costs rise. A meaningful share of casual rides exhibits repeat-commuter behavior — suggesting the conversion opportunity already exists inside the casual base but is invisible to current marketing.
-- **Question.** Which 3–5 stations represent the highest-ROI targets for a casual-to-member conversion campaign?
+- **Question.** Which 3–5 stations represent the highest-ROI targets for a casual to member conversion campaign?
 - **Analytical pivot.** The public dataset contains no user IDs so analysis must operate at the ride level via behavioral signature rather than at the rider level via identity tracking.
 ---
  
 ## Headline finding
  
-A gradient boosting classifier trained to distinguish member rides from casual rides identifies **55,226 casual rides per month** as behaviorally member-like (P(member) > 0.5). This is **five times the size** of a simple rule based commuter heuristic (rush-hour + weekday + short + one-way), which captures only 10,868 rides. The model-flagged population is the broader conversion target, riders who behave like members but haven't purchased the membership.
+A gradient boosting classifier trained to distinguish member rides from casual rides identifies **55,226 casual rides per month** as behaviorally member-like (P(member) > 0.5). This is **five times the size** of a simple rule based commuter heuristic (rush hour + weekday + short + one <img width="546" height="337" alt="Screenshot 2026-05-27 at 12 01 21 AM" src="https://github.com/user-attachments/assets/1285a798-58b6-44d5-aff3-f9348027af24" />
+way), which captures only 10,868 rides. The model-flagged population is the broader conversion target, riders who behave like members but haven't purchased the membership.
  
 ![Member vs casual temporal pattern](figures/heatmap_member_vs_casual.png)
 *Hour × day of week distribution of ride volume. Members ride in commute rhythm (weekday rush hours); casuals ride in leisure rhythm (weekend midday). The visible overlap at weekday rush hours is the conversion opportunity.*
@@ -34,7 +34,7 @@ A gradient boosting classifier trained to distinguish member rides from casual r
  
 ## Recommended targets
  
-Five stations rank highest by **target score** (model flagged member like volume × concentration of member-like behavior):
+Five stations rank highest by **target score** (model flagged member like volume × concentration of member like behavior):
  
 | Rank | Station | Monthly member-like rides | Concentration | Total casual rides |
 |------|---------|---------------------------|---------------|--------------------|
@@ -66,7 +66,7 @@ Four tactics, each tied to a feature the model identified as most predictive of 
 | Scope | New annual members | Annual recurring revenue |
 |---|---|---|
 | Pilot (5 stations) | 43 | $5,200 |
-| Full systemwide | ~1,060 | $127,000 |
+| Full systemwide | 1,060 | $127,000 |
  
 **Sensitivity to conversion rate:**
  
