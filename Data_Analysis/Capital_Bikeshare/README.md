@@ -24,10 +24,9 @@ Analysis of **6.2 million Capital Bikeshare rides** over 12 months (May 2025 –
  
 ## Headline finding
  
-A gradient boosting classifier trained to distinguish member rides from casual rides identifies **55,226 casual rides per month** as behaviorally member-like (P(member) > 0.5). This is **five times the size** of a simple rule based commuter heuristic (rush hour + weekday + short + one <img width="546" height="337" alt="Screenshot 2026-05-27 at 12 01 21 AM" src="https://github.com/user-attachments/assets/1285a798-58b6-44d5-aff3-f9348027af24" />
-way), which captures only 10,868 rides. The model-flagged population is the broader conversion target, riders who behave like members but haven't purchased the membership.
+A gradient boosting classifier trained to distinguish member rides from casual rides identifies **55,226 casual rides per month** as behaviorally member-like (P(member) > 0.5). This is **five times the size** of a simple rule based commuter heuristic (rush hour + weekday + short + one way), which captures only 10,868 rides. The model-flagged population is the broader conversion target, riders who behave like members but haven't purchased the membership.
  
-![Member vs casual temporal pattern](figures/heatmap_member_vs_casual.png)
+<img width="546" height="337" alt="Screenshot 2026-05-27 at 12 01 21 AM" src="https://github.com/user-attachments/assets/1285a798-58b6-44d5-aff3-f9348027af24" />
 *Hour × day of week distribution of ride volume. Members ride in commute rhythm (weekday rush hours); casuals ride in leisure rhythm (weekend midday). The visible overlap at weekday rush hours is the conversion opportunity.*
  
 ---
