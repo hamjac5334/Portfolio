@@ -4,7 +4,7 @@
  
 **Live dashboard:** [Capital Bikeshare Conversion Target Explorer](https://public.tableau.com/app/profile/jack.hamilton4441/viz/Capital_Bikeshare_Conversion_Target_dashboard/Dashboard1)
  
-**Deck:** [`Capital_bikeshare_presentation.pdf`]([capital_bikeshare.pdf](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Capital_Bikeshare/capital_bikeshare.pdf))
+**Deck:** [`Capital_bikeshare_presentation.pdf`](capital_bikeshare.pdf)(https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Capital_Bikeshare/capital_bikeshare.pdf))
 **Full analysis notebook:** [`analysis.ipynb`](new.ipynb)
  
  
@@ -45,7 +45,7 @@ Five stations rank highest by **target score** (model flagged member like volume
 | 4 | 37th & O St NW / Georgetown University | 407 | 51% | 798 |
 | 5 | 14th & V St NW | 380 | 40% | 955 |
  
-These stations cluster geographically along the 14th Street / U Street / Logan Circle / Dupont corridor in upper Northwest DC, with two transit/university anchors (Union Station, Georgetown). The clustering enables a single corridor-level campaign rather than five independent station-by-station efforts.
+These stations cluster geographically along the 14th Street / U Street / Logan Circle / Dupont corridor in upper Northwest DC, with two transit/university anchors (Union Station, Georgetown). The clustering enables a single corridor-level campaign rather than five independent station by station efforts.
 
 <img width="861" height="342" alt="Screenshot 2026-05-27 at 12 00 44 AM" src="https://github.com/user-attachments/assets/df7a014a-7c76-40a2-9542-e82e53cc9c18" />
 
@@ -53,7 +53,7 @@ These stations cluster geographically along the 14th Street / U Street / Logan C
 <img width="1463" height="747" alt="Screenshot 2026-05-26 at 11 57 32 PM" src="https://github.com/user-attachments/assets/eddeff49-39d1-49b5-a7c1-943faa50e4e8" />
 
 
-Station level conversion potential. Marker color encodes member-like share; marker size encodes total casual ride volume
+Station level conversion potential. Marker color encodes member like share; marker size encodes total casual ride volume
  
 ---
  
@@ -107,7 +107,7 @@ The analysis follows a five stage pipeline:
  
 1. **Data.** 6.2M ride records across 12 months and 500 stations.
 2. **Cleaning.** 2.3% of rides dropped (duration outliers, negative or sub-1-minute trips, > 24-hour trips). Systematic data quality audit with documented treatment for each issue.
-3. **Feature engineering.** 17 engineered features across three families: temporal (hour, day-of-week, rush-hour, season), trip-level (duration, distance, speed, round-trip flag, bike type), and station aggregates (per-station ride totals, casual share, avg duration).
+3. **Feature engineering.** 17 engineered features across three families: temporal (hour, day of week, rush hour, season), trip-level (duration, distance, speed, round-trip flag, bike type), and station aggregates (per-station ride totals, casual share, avg duration).
 4. **Modeling.** Chronological train/validation/test split (months 1–10 train, 11 validation, 12 test). HistGradientBoostingClassifier with class balancing. Target leakage controlled by computing station aggregates on training data only and merging onto val/test.
 5. **Translation.** Model scores aggregated to the station level. Stations ranked by member like volume × concentration. Sizing computed transparently with named, sensitivity tested assumptions.
 **Model performance.** ROC AUC = 0.73 on the held out validation set. The AUC reflects real overlap between member and casual ride patterns, which is the central thesis of the analysis. Effect sizes (Cramér's V = 0.21 for rush-hour effect) confirm that the differences are practically meaningful, not artifacts of sample size.
@@ -144,7 +144,7 @@ The raw data (12 monthly CSVs, 6.2M rows total) is not committed to this repo, b
  
 ## What I'd do with more time
  
-- Acquire anonymized user level data to enable rider-level (not ride-level) conversion modeling.
+- Acquire anonymized user level data to enable rider-level (not ride level) conversion modeling.
 - Add more in depth features: weather, event calendar, station amenities, adjacent transit ridership.
 - Hyperparameter tuning and out of time cross validation.
 - Operationalize the model as a real time targeting system feeding the on-bike screens and trigger based notifications.
