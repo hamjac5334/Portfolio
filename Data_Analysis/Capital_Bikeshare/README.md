@@ -4,7 +4,7 @@
  
 **Live dashboard:** [Capital Bikeshare Conversion Target Explorer](https://public.tableau.com/app/profile/jack.hamilton4441/viz/Capital_Bikeshare_Conversion_Target_dashboard/Dashboard1)
  
-**Deck:** [`Capital_bikeshare_presentation.pdf`]([deliverables/deck.pdf](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Capital_Bikeshare/capital_bikeshare.pdf))
+**Deck:** [`Capital_bikeshare_presentation.pdf`]([capital_bikeshare.pdf](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Capital_Bikeshare/capital_bikeshare.pdf))
 **Full analysis notebook:** [`analysis.ipynb`](new.ipynb)
  
  
@@ -138,7 +138,7 @@ The raw data (12 monthly CSVs, 6.2M rows total) is not committed to this repo, b
  
 - **No user IDs.** The public dataset records rides, not riders. Analysis operates at the ride level and assumes ride patterns reflect underlying rider behavior. Sizing assumes 30 rides per unique potential converter annually.
 - **Moderate model AUC (0.73).** Targeting rankings should be field-validated against a control set before broad rollout.
-- **Feature dependence.** The top model features (`speed`, `station-level casual share`) encode a mix of behavioral and geographic signal. Station level casual share in particular captures historical base rate, true behavioral conversion candidates outside high casual stations may be undercounted.
+- **Feature dependence.** The top model features (`speed`, `station level casual share`) encode a mix of behavioral and geographic signal. Station level casual share in particular captures historical base rate, true behavioral conversion candidates outside high casual stations may be undercounted.
 - **Geographic concentration risk.** The pilot is concentrated in upper Northwest DC; weather, local events, or station outages during the pilot window could distort the read.
 ---
  
@@ -154,6 +154,6 @@ The raw data (12 monthly CSVs, 6.2M rows total) is not committed to this repo, b
 ## Tools and stack
  
 - **Python:** pandas, numpy, scikit-learn, scipy, matplotlib, seaborn, folium
-- **Modeling:** HistGradientBoostingClassifier (sklearn), Welch's t-test, chi-square, effect sizes (Cohen's d, Cramér's V)
+- **Modeling:** HistGradientBoostingClassifier (sklearn), Welch's t-test, chi-square, effect sizes (Cohen's d, Cramer's V)
 - **Visualization:** matplotlib/seaborn for notebook charts, folium for interactive maps, Tableau Public for the live dashboard
 - **Deliverables:** Jupyter, PowerPoint, Tableau
