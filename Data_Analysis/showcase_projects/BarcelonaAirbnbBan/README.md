@@ -2,6 +2,8 @@
 
 Predicting the economic and housing impact of Barcelona's 2028 Airbnb ban using historical data from NYC and Lisbon as natural experiments.
 
+(The notebook with full outputs could not be uploaded to github because of the size of the ipynb .file. Download and run to see results)
+
 **Live dashboard:** [Barcelona 2028 Airbnb Ban Impacts](https://public.tableau.com/app/profile/jack.hamilton4441/viz/BarcelonaAirbnb_17806215055810/Dashboard1?publish=yes)
 
 **Full analysis notebook:** [`barcelona.ipynb`](barcelona.ipynb)
@@ -31,6 +33,9 @@ Every Barcelona neighborhood is predicted to see price increases post-ban, rangi
 | Ciutat Vella | $131 | $201 | +53% |
 | Horta-Guinardó | $115 | $144 | +25% |
 | Nou Barris | $109 | $125 | +15% |
+
+
+<img width="914" height="347" alt="Screenshot 2026-06-04 at 11 21 09 PM" src="https://github.com/user-attachments/assets/0083a406-bf47-4dc6-b671-05ea0ac475c0" />
 
 
 <img width="930" height="449" alt="Screenshot 2026-06-04 at 11 22 35 PM" src="https://github.com/user-attachments/assets/60bbdd5a-6810-4d9c-aa6b-60db10be9d02" />
@@ -81,6 +86,14 @@ R^2 of 0.45 is consistent with published STR price prediction research using nei
 | New York City | Local Law 18 (near total STR ban) | September 5, 2023 | -44% listings, +14.5% prices |
 | Lisbon | STR moratorium, subsequently reversed | June 2021 / reversed 2024 | +35.5% prices post-restriction |
 | Barcelona | Full Airbnb ban (planned) | November 2028 | Predicted: +44.88% avg price |
+
+<img width="922" height="558" alt="Screenshot 2026-06-04 at 11 17 37 PM" src="https://github.com/user-attachments/assets/f33e57e7-fecf-4267-b785-b8479e1050f6" />
+
+<img width="931" height="592" alt="Screenshot 2026-06-04 at 11 18 13 PM" src="https://github.com/user-attachments/assets/a03fad15-09d1-4e86-83ef-efdc0deeea69" />
+
+<img width="845" height="547" alt="Screenshot 2026-06-04 at 11 20 38 PM" src="https://github.com/user-attachments/assets/4be4eccb-b2c5-4901-8504-84da8e8e2a5d" />
+
+
 
 
 ## Limitations
