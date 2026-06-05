@@ -8,8 +8,8 @@
  
  
 Analysis of **6.2 million Capital Bikeshare rides** over 12 months (May 2025 – April 2026) identifies **55,000 casual rides per month** (32% of casual ridership) that exhibit behavioral patterns indistinguishable from member ridership. Five stations in the upper Northwest DC corridor, anchored by Union Station and Georgetown University. A validated pilot campaign at these stations scales to an estimated **1,060 new annual members and $127K in annual recurring revenue** ($48K–$318K sensitivity range depending on conversion rate).
+
  
----
  
 ## The business question
  
@@ -19,7 +19,8 @@ Analysis of **6.2 million Capital Bikeshare rides** over 12 months (May 2025 –
 - **Complication.** Member growth is plateauing as paid acquisition costs rise. A meaningful share of casual rides exhibits repeat-commuter behavior — suggesting the conversion opportunity already exists inside the casual base but is invisible to current marketing.
 - **Question.** Which 3–5 stations represent the highest-ROI targets for a casual to member conversion campaign?
 - **Analytical pivot.** The public dataset contains no user IDs so analysis must operate at the ride level via behavioral signature rather than at the rider level via identity tracking.
----
+
+
  
 ## Headline finding
  
@@ -29,8 +30,8 @@ A gradient boosting classifier trained to distinguish member rides from casual r
 
 
 Hour × day of week distribution of ride volume. Members ride in commute rhythm (weekday rush hours); casuals ride in leisure rhythm (weekend midday). The visible overlap at weekday rush hours is the conversion opportunity.
+
  
----
  
 ## Recommended targets
  
@@ -53,8 +54,8 @@ These stations cluster geographically along the 14th Street / U Street / Logan C
 
 
 Station level conversion potential. Marker color encodes member like share; marker size encodes total casual ride volume
+
  
----
  
 ## Recommended interventions
  
@@ -64,7 +65,8 @@ Four tactics, each tied to a feature the model identified as most predictive of 
 2. **Permanent dock signage with QR value calculator.** Above dock signage at each target station linking to a savings calculator. 24/7 visibility, reuses the rush hour creative.
 3. **Trigger based email and push notifications.** Send membership offers to accounts purchasing 3+ single-trip passes within 30 days, operationalizes the conversion insight via transaction data.
 4. **Adjacent employer and university partnerships.** Pursue corporate-rate pilots with HR offices at Georgetown University and Union Station's federal employer cluster.
----
+
+
  
 ## Sizing the opportunity
  
@@ -85,8 +87,8 @@ Four tactics, each tied to a feature the model identified as most predictive of 
 | 20% | 2,651 | $318,120 |
  
 The pilot is the validation step that narrows the systemwide range. Sizing assumes 30 rides per unique potential converter per year, a key assumption that field testing should validate.
+
  
----
  
 ## Pilot design
  
@@ -97,8 +99,8 @@ The pilot is the validation step that narrows the systemwide range. Sizing assum
 | **Window** | 90 days |
 | **Success metric** | ≥20% lift in casual to member conversion rate at p < 0.05 |
 | **Power** | 25 conversions per arm required to detect the effect |
+
  
----
  
 ## Approach
  
@@ -111,27 +113,7 @@ The analysis follows a five stage pipeline:
 5. **Translation.** Model scores aggregated to the station level. Stations ranked by member like volume × concentration. Sizing computed transparently with named, sensitivity tested assumptions.
 **Model performance.** ROC AUC = 0.73 on the held out validation set. The AUC reflects real overlap between member and casual ride patterns, which is the central thesis of the analysis. Effect sizes (Cramér's V = 0.21 for rush-hour effect) confirm that the differences are practically meaningful, not artifacts of sample size.
  
- 
-## Reproducing the analysis
- 
-The raw data (12 monthly CSVs, 6.2M rows total) is not committed to this repo, but it's publicly available from Capital Bikeshare and would exceed GitHub file limits. To reproduce:
- 
-1. **Clone the repository.**
-   ```bash
-   git clone https://github.com/hamjac5334/Portfolio.git
-   cd Portfolio/capital-bikeshare-conversion
-   ```
- 
-2. **Set up the Python environment.**
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate   # on macOS/Linux
-   pip install -r requirements.txt
-   ```
- 
-3. **Download the data.** Get the 12 monthly trip CSVs (May 2025 through April 2026) from [Capital Bikeshare's public data feed](https://capitalbikeshare.com/system-data) and place them in a `data/` folder at the project root. File naming convention: `YYYYMM-capitalbikeshare-tripdata.csv`.
-4. **Run the notebook.** Open `analysis.ipynb` in Jupyter and run all cells. Expected runtime: 3–5 minutes on a modern laptop.
----
+
  
 ## Limitations
  
@@ -139,7 +121,7 @@ The raw data (12 monthly CSVs, 6.2M rows total) is not committed to this repo, b
 - **Moderate model AUC (0.73).** Targeting rankings should be field-validated against a control set before broad rollout.
 - **Feature dependence.** The top model features (`speed`, `station level casual share`) encode a mix of behavioral and geographic signal. Station level casual share in particular captures historical base rate, true behavioral conversion candidates outside high casual stations may be undercounted.
 - **Geographic concentration risk.** The pilot is concentrated in upper Northwest DC; weather, local events, or station outages during the pilot window could distort the read.
----
+  
  
 ## What I'd do with more time
  
@@ -148,7 +130,7 @@ The raw data (12 monthly CSVs, 6.2M rows total) is not committed to this repo, b
 - Hyperparameter tuning and out of time cross validation.
 - Operationalize the model as a real time targeting system feeding the on-bike screens and trigger based notifications.
 - A/B test the four interventions individually to attribute conversion lift to specific tactics.
----
+  
  
 ## Tools and stack
  
