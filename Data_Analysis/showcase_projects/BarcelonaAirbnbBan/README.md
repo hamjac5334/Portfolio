@@ -18,7 +18,7 @@ Analysis of **124,447 Airbnb listings** across Barcelona, New York City, and Lis
 - **Question.** Should Barcelona execute the 2028 ban as planned, and if so, what complementary measures are needed to protect both housing affordability and tourism viability?
 - **Analytical approach.** Use NYC (Local Law 18, September 2023) and Lisbon (moratorium 2021, reversed 2024) as natural experiments. Train a Difference-in-Differences model on pre/post ban data from both cities to predict Barcelona's post-2028 trajectory.
 
-
+<img width="929" height="387" alt="Screenshot 2026-06-04 at 11 19 45 PM" src="https://github.com/user-attachments/assets/79e6585f-8e87-47b4-89ee-6329a8181a3a" />
 
 ## Headline finding
 
@@ -33,12 +33,15 @@ Every Barcelona neighborhood is predicted to see price increases post-ban, rangi
 | Nou Barris | $109 | $125 | +15% |
 
 
+<img width="930" height="449" alt="Screenshot 2026-06-04 at 11 22 35 PM" src="https://github.com/user-attachments/assets/60bbdd5a-6810-4d9c-aa6b-60db10be9d02" />
+
+
 
 ## Recommendation
 
 Barcelona should not execute a full Airbnb ban in 2028 without complementary measures. Based on NYC and Lisbon evidence, the ban will cause significant accommodation price increases for tourists while failing to lower housing costs for locals — as landlords respond to reduced STR demand by maintaining rents rather than lowering them.
 
-As an alternative, Barcelona should implement **neighborhood level STR caps** targeting the most saturated districts (Eixample at 1,255 listings/km², Ciutat Vella at 1,442 listings/km²) while investing in hotel capacity in high tourism areas. This approach reduces housing displacement pressure without eliminating tourist accommodation entirely, preserving the tourism economy while protecting residential neighborhoods.
+As an alternative, Barcelona should implement **neighborhood level STR caps** targeting the most saturated districts (Eixample at 1,255 listings/km^2, Ciutat Vella at 1,442 listings/km^2) while investing in hotel capacity in high tourism areas. This approach reduces housing displacement pressure without eliminating tourist accommodation entirely, preserving the tourism economy while protecting residential neighborhoods.
 
 
 ## Key analytical findings
@@ -103,5 +106,5 @@ R^2 of 0.45 is consistent with published STR price prediction research using nei
 - **Python:** pandas, numpy, scikit-learn, xgboost, matplotlib, seaborn
 - **Database:** PostgreSQL with SQLAlchemy
 - **Modeling:** LinearRegression, RandomForestRegressor, XGBRegressor (sklearn/xgboost), Difference-in-Differences framework
-- **Visualization:** matplotlib/seaborn for notebook charts, Tableau Public for live dashboard
+- **Visualization:** matplotlib/seaborn for notebook charts, Tableau 
 - **Data sources:** Inside Airbnb, Open Data BCN (Ajuntament de Barcelona), INE Spain, INE Portugal
