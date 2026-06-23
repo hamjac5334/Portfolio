@@ -4,7 +4,7 @@
  
 **Live dashboard:** [Capital Bikeshare Conversion Target Explorer](https://public.tableau.com/app/profile/jack.hamilton4441/viz/Capital_Bikeshare_Conversion_Target_dashboard/Dashboard1)
  
-**Deck:** [https://drive.google.com/file/d/1KrX6qZJuWlo70n8pI2jPPguGrL0dhfM5/view?usp=sharing](Capital_bikeshare_presentation.pdf) **Full analysis notebook:** [`analysis.ipynb`](new.ipynb)
+**Deck:** [Capital_bikeshare_presentation.pdf](https://drive.google.com/file/d/1KrX6qZJuWlo70n8pI2jPPguGrL0dhfM5/view?usp=sharing) **Full analysis notebook:** [`analysis.ipynb`](new.ipynb)
  
  
 Analysis of **6.2 million Capital Bikeshare rides** over 12 months (May 2025 – April 2026) identifies **55,000 casual rides per month** (32% of casual ridership) that exhibit behavioral patterns indistinguishable from member ridership. Five stations in the upper Northwest DC corridor, anchored by Union Station and Georgetown University. A validated pilot campaign at these stations scales to an estimated **1,060 new annual members and $127K in annual recurring revenue** ($48K–$318K sensitivity range depending on conversion rate).
