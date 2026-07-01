@@ -1,4 +1,4 @@
-# Capital Bikeshare: Casual-to-Member Conversion Strategy
+# Capital Bikeshare: Casual to Member Conversion Strategy
  
  Identifying high yield stations for a behavioral targeting campaign that converts casual riders into annual members.
  
