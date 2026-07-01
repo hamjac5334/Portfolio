@@ -1,6 +1,6 @@
 # Capital Bikeshare: Casual to Member Conversion Strategy
  
- Identifying high yield stations for a behavioral targeting campaign that converts casual riders into annual members.
+Built a machine learning targeting strategy that identified 1,060 potential new annual members and an estimated $127K in recurring revenue
  
 **Live dashboard:** [Capital Bikeshare Conversion Target Explorer](https://public.tableau.com/app/profile/jack.hamilton4441/viz/Capital_Bikeshare_Conversion_Target_dashboard/Dashboard1)
  
