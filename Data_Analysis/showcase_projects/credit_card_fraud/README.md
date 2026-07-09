@@ -3,6 +3,7 @@
 Building a machine learning pipeline to detect fraudulent credit card transactions using SQL, feature engineering, resampling, and classification models on the Capital One fraud dataset.  
 
 **Data Used** https://github.com/CapitalOneRecruiting/DS 
+**Full Notebook** https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/showcase_projects/credit_card_fraud/creditcardfraud.ipynb
 
 ## Research question
 
