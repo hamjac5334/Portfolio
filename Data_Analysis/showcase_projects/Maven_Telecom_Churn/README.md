@@ -82,7 +82,6 @@ The analysis follows a five stage pipeline:
 - **Churn is defined as non-renewal at a single snapshot**, not a continuously observed cancellation event, so the lead time between a rising risk score and actual churn isn't directly measured here.
 ## What I'd do with more time
  
-- Recalibrate predicted probabilities (Platt scaling or isotonic regression) so scores reflect true likelihoods rather than outputs distorted by class weighting.
 - Validate the model on additional quarters or regions to test whether the churn drivers generalize beyond this one snapshot.
 - Incorporate customer lifetime value or subscription revenue into prioritization, so retention spend is ranked by expected value at risk, not churn probability alone.
 - Replace the eyeballed precision-recall threshold with one derived from actual retention campaign cost and average customer value.
