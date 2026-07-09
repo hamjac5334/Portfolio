@@ -5,7 +5,7 @@ Building a machine learning pipeline to detect fraudulent credit card transactio
 **Data Used** https://github.com/CapitalOneRecruiting/DS 
 
 
-**Full Notebook** [https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/showcase_projects/credit_card_fraud/creditcardfraud.ipynb](creditcardfraud.ipynb)
+**Full Notebook** [https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/showcase_projects/credit_card_fraud/creditcardfraud.ipynb][creditcardfraud.ipynb]
 
 ## Research question
 
