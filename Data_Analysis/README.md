@@ -1,6 +1,12 @@
-# Showcase Projects
+# Data Analysis Projects
 
 Hi, I'm Jack Hamilton. This folder holds the analytics projects I'm most proud of, built alongside my Computer Science degree (Data Analytics minor) at Hendrix College and now while working as a Data/AI Analyst and starting my M.S. in Business Analytics at Georgetown.
+
+**School Projects** [School Projects](https://www.linkedin.com/in/jack-hamilton-457bb02a7/)
+
+**Showcase Projects** [Showcase](https://www.linkedin.com/in/jack-hamilton-457bb02a7/)
+
+
 
 ## Background
 
