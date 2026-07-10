@@ -6,10 +6,3 @@
 - **[Credit Card Fraud Detection](./credit_card_fraud)** — SQL and Python fraud-detection pipeline built on Capital One's own public fraud dataset, tackling extreme class imbalance with SMOTE, resampling, and ensemble classifiers.
 - **[Semantic Evaluation of UN SDG Reports](./SDG_Semantics)** — NLP analysis of how UN Sustainable Development Goal report language shifted from 2016–2025, validating an urgency metric against real UN progress ratings.
 
-## More of my work
-
-- **Live dashboards:** [Tableau Public profile](https://public.tableau.com/app/profile/jack.hamilton4441)
-- **Full portfolio & write-ups:** [hamjac5334.github.io](https://hamjac5334.github.io)
-- **Connect:** [LinkedIn](https://www.linkedin.com/in/jack-hamilton-457bb02a7/)
-
-
