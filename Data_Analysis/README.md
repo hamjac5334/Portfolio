@@ -1,4 +1,4 @@
-# Data Analysis GitHub Portfolio
+# Jack Hamilton's Analytics GitHub Portfolio
 
 - **Live dashboards:** [Tableau Public profile](https://public.tableau.com/app/profile/jack.hamilton4441)
 - **Personal Website:** [hamjac5334.github.io](https://hamjac5334.github.io)
