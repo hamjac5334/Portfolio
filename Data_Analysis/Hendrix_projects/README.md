@@ -10,7 +10,7 @@ Labs and projects from my Scientific Computing coursework at Hendrix College, ap
 - **[malaria-project-jack-hamilton.ipynb:](./malaria-project-jack-hamilton.ipynb)** Modeled malaria transmission dynamics in Rwanda with an SIR compartmental model, simulating 5 year trajectories under different vaccination scenarios.
 - **[nyc-death-data-jack-hamilton.ipynb:](./nyc-death-data-jack-hamilton.ipynb)** Analyzed NYC mortality data for trends across time, cause of death, and demographics.
 
-## [Computational Humanities Projects:](./csci-270-lab-3-document-clustering.ipynb)
+## [Computational Humanities Projects:]([./csci-270-lab-3-document-clustering.ipynb](https://github.com/hamjac5334/Portfolio/tree/main/Data_Analysis/Hendrix_projects/computational_humanities)
 
 
 Labs from my Computational Humanities course, applying NLP, statistical, and computer vision techniques to literary and cultural questions(text, sentiment, meaning, and visual art). 
