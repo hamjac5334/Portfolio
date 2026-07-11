@@ -1,5 +1,7 @@
 
-# Scientific Computing Work: [my portfolio site](https://hamjac5334.github.io/projects.html)
+
+
+## Scientific Computing Work: 
 
 Labs and projects from my Scientific Computing coursework at Hendrix College, applying simulation, optimization, and statistical modeling to real-world questions. Fuller write-ups for select projects live on.
 
