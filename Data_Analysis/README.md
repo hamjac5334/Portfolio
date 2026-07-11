@@ -12,6 +12,27 @@ Hi, I'm Jack Hamilton. This folder holds the analytics projects I'm most proud o
 
 **School Projects** [School Projects](https://github.com/hamjac5334/Portfolio/tree/main/Data_Analysis/Hendrix_projects)
 
+## [Scientific Projects:](https://github.com/hamjac5334/Portfolio/tree/main/Data_Analysis/Hendrix_projects/scientific_computing)
+
+Labs and projects from my Scientific Computing coursework at Hendrix College, applying simulation, optimization, and statistical modeling to real world questions.
+
+- **[FloridaGerrymanderingWithTSP.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/scientific_computing/FloridaGerrymanderingWithTSP.ipynb)** Optimized Florida's congressional district maps to reduce gerrymandering, using TSP-style optimization and quantitative fairness metrics.
+- **[jack-hamilton-heart-lab.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/scientific_computing/FloridaGerrymanderingWithTSP.ipynb)** Built predictive models for heart failure risk from patient health indicators, with exploratory analysis and model evaluation.
+- **[lab-5-predicting-the-mid-term-elections.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/scientific_computing/lab-5-predicting-the-mid-term-elections.ipynb)** Predicted 2024 U.S. Senate election outcomes using Monte Carlo simulation over polling data.
+- **[malaria-project-jack-hamilton.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/scientific_computing/malaria-project-jack-hamilton.ipynb)** Modeled malaria transmission dynamics in Rwanda with an SIR compartmental model, simulating 5 year trajectories under different vaccination scenarios.
+- **[nyc-death-data-jack-hamilton.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/scientific_computing/nyc-death-data-jack-hamilton.ipynb)** Analyzed NYC mortality data for trends across time, cause of death, and demographics.
+
+## [Computational Humanities Projects:](https://github.com/hamjac5334/Portfolio/tree/main/Data_Analysis/Hendrix_projects/computational_humanities)
+
+
+Labs from my Computational Humanities course, applying NLP, statistical, and computer vision techniques to literary and cultural questions(text, sentiment, meaning, and visual art). 
+
+- **[finalproject-musicanalyzer.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/computational_humanities/finalproject-musicanalyzer.ipynb)** Final project comparing the top songs of 1953 vs. 2023 on sonic features, sentiment, and structure using Pandas, Librosa, and deep learning.
+- **[csci-270-lab-3-document-clustering.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/computational_humanities/csci-270-lab-3-document-clustering.ipynb)** Built TF-IDF and cosine-similarity functions from scratch to cluster documents (poems and novels) by textual similarity.
+- **[final-lab-4-finding-meaning-copy.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/computational_humanities/final-lab-4-finding-meaning-copy.ipynb)** Explored extractive summarization and Word2Vec embeddings, with PCA visualization, to surface meaning and thematic structure in a novel.
+- **[lab-5-sentiment-analysis.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/computational_humanities/lab-5-sentiment-analysis.ipynb)** Compared four sentiment analysis approaches (a custom word-rating model, BERT, VADER, and TextBlob) on poetry and prose, evaluating each against human judgment.
+- **[my-lab-7-new.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/computational_humanities/my-lab-7-new.ipynb)**  Applied facial recognition (DeepFace, RetinaFace) to a set of historical portraits to explore computational approaches to visual likeness and identity.
+
 
 
 ## Background
