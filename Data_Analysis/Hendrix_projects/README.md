@@ -10,7 +10,6 @@ Labs and projects from my Scientific Computing coursework at Hendrix College, ap
 
 ## [Computational Humanities Projects:](https://github.com/hamjac5334/Portfolio/tree/main/Data_Analysis/Hendrix_projects/computational_humanities)
 
-
 Labs from my Computational Humanities course, applying NLP, statistical, and computer vision techniques to literary and cultural questions(text, sentiment, meaning, and visual art). 
 
 - **[finalproject-musicanalyzer.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/computational_humanities/finalproject-musicanalyzer.ipynb)** Final project comparing the top songs of 1953 vs. 2023 on sonic features, sentiment, and structure using Pandas, Librosa, and deep learning.
