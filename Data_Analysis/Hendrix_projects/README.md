@@ -1,5 +1,3 @@
-
-
 ## [Scientific Projects:](https://github.com/hamjac5334/Portfolio/tree/main/Data_Analysis/Hendrix_projects/scientific_computing)
 
 Labs and projects from my Scientific Computing coursework at Hendrix College, applying simulation, optimization, and statistical modeling to real world questions.
