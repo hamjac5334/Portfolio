@@ -15,11 +15,12 @@ Labs and projects from my Scientific Computing coursework at Hendrix College, ap
 
 Labs from my Computational Humanities course, applying NLP, statistical, and computer vision techniques to literary and cultural questions(text, sentiment, meaning, and visual art). 
 
+- **[finalproject-musicanalyzer.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/computational_humanities/finalproject-musicanalyzer.ipynb)** Final project comparing the top songs of 1953 vs. 2023 on sonic features, sentiment, and structure using Pandas, Librosa, and deep learning.
 - **[csci-270-lab-3-document-clustering.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/computational_humanities/csci-270-lab-3-document-clustering.ipynb)** Built TF-IDF and cosine-similarity functions from scratch to cluster documents (poems and novels) by textual similarity.
 - **[final-lab-4-finding-meaning-copy.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/computational_humanities/final-lab-4-finding-meaning-copy.ipynb)** Explored extractive summarization and Word2Vec embeddings, with PCA visualization, to surface meaning and thematic structure in a novel.
 - **[lab-5-sentiment-analysis.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/computational_humanities/lab-5-sentiment-analysis.ipynb)** Compared four sentiment analysis approaches (a custom word-rating model, BERT, VADER, and TextBlob) on poetry and prose, evaluating each against human judgment.
 - **[my-lab-7-new.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/computational_humanities/my-lab-7-new.ipynb)**  Applied facial recognition (DeepFace, RetinaFace) to a set of historical portraits to explore computational approaches to visual likeness and identity.
-- **[finalproject-musicanalyzer.ipynb:](https://github.com/hamjac5334/Portfolio/blob/main/Data_Analysis/Hendrix_projects/computational_humanities/finalproject-musicanalyzer.ipynb)** Final project comparing the top songs of 1953 vs. 2023 on sonic features, sentiment, and structure using Pandas, Librosa, and deep learning.
+
 
 
 
